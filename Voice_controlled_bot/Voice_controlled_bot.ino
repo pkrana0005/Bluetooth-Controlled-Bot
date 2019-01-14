@@ -15,8 +15,8 @@ void setup()
   pinMode(rmen,OUTPUT);
   pinMode(lmen,OUTPUT);
   Serial.begin(9600); //9600 is default baud rate at which bluetooth module transfers information to Arduino
-  digitalWrite(A0,HIGH);
-  digitalWrite(A1,HIGH);
+  analogWrite(rmen,130);
+  analogWrite(lmen,135);
 }
 
 void loop()
